@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VOID — Creative Projects</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<div id="loader">
+  <div class="loader-logo">VOID</div>
+  <div class="loader-bar"></div>
+  <div class="loader-num" id="loader-pct">0%</div>
+</div>
+
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<nav>
+  <div class="nav-logo">VOID</div>
+  <ul class="nav-links">
+    <li><a href="#projects">Work</a></li>
+    <li><a href="#stats">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid-lines"></div>
+  <div class="hero-number">15</div>
+
+  <div class="hero-tag">Selected projects — 2024/25</div>
+
+  <h1 class="hero-title">
+    WE BUILD<br>
+    THE <span class="accent">IMPOSSIBLE</span>
+  </h1>
+
+  <p class="hero-sub">
+    A curated collection of digital experiments pushing the boundaries of interface design.
+  </p>
+
+  <div class="hero-scroll">Scroll</div>
+  <div class="hero-counter">15 / 15 PROJECTS</div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track" id="marquee">
+    <div class="marquee-item">Web Design <span>✦</span></div>
+    <div class="marquee-item">3D Experiences <span>✦</span></div>
+    <div class="marquee-item">AI Interfaces <span>✦</span></div>
+    <div class="marquee-item">Data Visualization <span>✦</span></div>
+    <div class="marquee-item">Motion Design <span>✦</span></div>
+    <div class="marquee-item">Creative Coding <span>✦</span></div>
+    <div class="marquee-item">Web Design <span>✦</span></div>
+    <div class="marquee-item">3D Experiences <span>✦</span></div>
+    <div class="marquee-item">AI Interfaces <span>✦</span></div>
+    <div class="marquee-item">Data Visualization <span>✦</span></div>
+    <div class="marquee-item">Motion Design <span>✦</span></div>
+    <div class="marquee-item">Creative Coding <span>✦</span></div>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats" id="stats">
+  <div class="stat fade-up">
+    <div class="stat-num" data-target="15">00</div>
+    <div class="stat-label">Projects</div>
+  </div>
+  <div class="stat fade-up" style="transition-delay:0.1s">
+    <div class="stat-num" data-target="5">00</div>
+    <div class="stat-label">Categories</div>
+  </div>
+  <div class="stat fade-up" style="transition-delay:0.2s">
+    <div class="stat-num" data-target="48">00</div>
+    <div class="stat-label">Technologies</div>
+  </div>
+  <div class="stat fade-up" style="transition-delay:0.3s">
+    <div class="stat-num" data-target="3">00</div>
+    <div class="stat-label">Years Active</div>
+  </div>
+</div>
+
+<!-- FILTER + PROJECTS -->
+<div class="filter-section fade-up">
+  <div class="filter-label">Filter by</div>
+  <div class="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="web">Web</button>
+    <button class="filter-btn" data-filter="app">App</button>
+    <button class="filter-btn" data-filter="3d">3D</button>
+    <button class="filter-btn" data-filter="ai">AI</button>
+    <button class="filter-btn" data-filter="data">Data</button>
+  </div>
+</div>
+
+<div class="section-header fade-up">
+  <h2 class="section-title">Selected<br><span>Work</span></h2>
+  <div class="section-count">15 Projects — 2024/25</div>
+</div>
+
+<section id="projects">
+  <div class="projects-grid" id="grid">
+
+    <!-- 1. FEATURED -->
+    <div class="project-card featured" data-cat="web">
+      <div class="card-bg card-bg-1"></div>
+      <div class="card-visual">
+        <svg class="visual-svg" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="rg1" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#5340cc" stop-opacity="0.4"/>
+              <stop offset="100%" stop-color="#0f0e1a" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="800" height="300" fill="url(#rg1)"/>
+          <!-- Constellation points -->
+          <g fill="white" opacity="0.6">
+            <circle cx="200" cy="100" r="2"/>
+            <circle cx="320" cy="60" r="1.5"/>
+            <circle cx="280" cy="180" r="2"/>
+            <circle cx="450" cy="80" r="1.5"/>
+            <circle cx="500" cy="200" r="2"/>
+            <circle cx="600" cy="120" r="1.5"/>
+            <circle cx="650" cy="220" r="2"/>
+            <circle cx="380" cy="250" r="1"/>
+            <circle cx="150" cy="220" r="1.5"/>
+            <circle cx="700" cy="80" r="1"/>
+          </g>
+          <!-- Lines -->
+          <g stroke="rgba(83,64,204,0.4)" stroke-width="0.5" fill="none">
+            <line x1="200" y1="100" x2="320" y2="60"/>
+            <line x1="320" y1="60" x2="450" y2="80"/>
+            <line x1="450" y1="80" x2="600" y2="120"/>
+            <line x1="600" y1="120" x2="650" y2="220"/>
+            <line x1="280" y1="180" x2="500" y2="200"/>
+            <line x1="200" y1="100" x2="280" y2="180"/>
+            <line x1="500" y1="200" x2="650" y2="220"/>
+            <line x1="700" y1="80" x2="600" y2="120"/>
+          </g>
+          <!-- Glowing circle -->
+          <circle cx="400" cy="150" r="80" fill="none" stroke="rgba(83,64,204,0.2)" stroke-width="40"/>
+          <circle cx="400" cy="150" r="40" fill="none" stroke="rgba(83,64,204,0.3)" stroke-width="1"/>
+          <!-- Data text -->
+          <text x="400" y="145" font-family="monospace" font-size="10" fill="rgba(200,190,255,0.7)" text-anchor="middle">NEBULA.OS</text>
+          <text x="400" y="160" font-family="monospace" font-size="7" fill="rgba(200,190,255,0.4)" text-anchor="middle">v2.0.1-alpha</text>
+        </svg>
+      </div>
+      <div class="card-overlay"></div>
+      <div class="scan-line"></div>
+      <div class="card-content">
+        <div class="card-index">01</div>
+        <div class="card-category cat-web">Web</div>
+        <div class="card-title">Nebula OS Dashboard</div>
+        <div class="card-desc">A space-themed operating system interface with real-time data visualization and constellation navigation.</div>
+        <div class="card-tags">
+          <span class="tag">React</span>
+          <span class="tag">Three.js</span>
+          <span class="tag">WebGL</span>
+          <span class="tag">D3</span>
+        </div>
+      </div>
+      <div class="card-arrow">
+        <svg viewBox="0 0 14 14" fill="none">
+          <path d="M2 12L12 2M12 2H6M12 2V8" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="project-card" data-cat="ai">
+      <div class="card-bg card-bg-2"></div>
+      <div class="card-visual">
+        <svg class="visual-svg" viewBox="0 0 300 225" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="rg2" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#1d9e75" stop-opacity="0.3"/>
+              <stop offset="100%" stop-color="#0a1a0f" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="300" height="225" fill="url(#rg2)"/>
+          <!-- Neural network -->
+          <g fill="rgba(30,200,120,0.7)" stroke="none">
+            <circle cx="60" cy="60" r="5"/>
+            <circle cx="60" cy="112" r="5"/>
+            <circle cx="60" cy="164" r="5"/>
+            <circle cx="150" cy="45" r="6"/>
+            <circle cx="150" cy="90" r="6"/>
+            <circle cx="150" cy="135" r="6"/>
+            <circle cx="150" cy="180" r="6"/>
+            <circle cx="240" cy="78" r="5"/>
+            <circle cx="240" cy="147" r="5"/>
+          </g>
+          <g stroke="rgba(30,200,120,0.2)" stroke-width="0.5" fill="none">
+            <line x1="65" y1="60" x2="144" y2="45"/>
+            <line x1="65" y1="60" x2="144" y2="90"/>
+            <line x1="65" y1="60" x2="144" y2="135"/>
+            <line x1="65" y1="112" x2="144" y2="45"/>
+            <line x1="65" y1="112" x2="144" y2="90"/>
+            <line x1="65" y1="112" x2="144" y2="135"/>
+            <line x1="65" y1="112" x2="144" y2="180"/>
+            <line x1="65" y1="164" x2="144" y2="90"/>
+            <line x1="65" y1="164" x2="144" y2="135"/>
+            <line x1="65" y1="164" x2="144" y2="180"/>
+            <line x1="156" y1="45" x2="235" y2="78"/>
+            <line x1="156" y1="90" x2="235" y2="78"/>
+            <line x1="156" y1="90" x2="235" y2="147"/>
+            <line x1="156" y1="135" x2="235" y2="78"/>
+            <line x1="156" y1="135" x2="235" y2="147"/>
+            <line x1="156" y1="180" x2="235" y2="147"/>
+          </g>
+          <text x="150" y="212" font-family="monospace" font-size="8" fill="rgba(30,200,120,0.6)" text-anchor="middle">NEURAL PATTERN RECOGNITION</text>
+        </svg>
+      </div>
+      <div class="card-overlay"></div>
+      <div class="card-content">
+        <div class="card-index">02</div>
+        <div class="card-category cat-ai">AI</div>
+        <div class="card-title">Mind Mapper</div>
+        <div class="card-desc">Neural network visualization tool mapping thought patterns through AI-generated concept graphs.</div>
+        <div class="card-tags">
+          <span class="tag">Python</span>
+          <span class="tag">TensorFlow</span>
+          <span class="tag">SVG</span>
+        </div>
+      </div>
+      <div class="card-arrow">
+        <svg viewBox="0 0 14 14" fill="none">
+          <path d="M2 12L12 2M12 2H6M12 2V8" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="project-card" data-cat="3d">
+      <div class="card-bg card-bg-3"></div>
+      <div class="card-visual">
+        <svg class="visual-svg" viewBox="0 0 300 225" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="rg3" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#c8502a" stop-opacity="0.35"/>
+              <stop offset="100%" stop-color="#1a0f0a" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="300" height="225" fill="url(#rg3)"/>
+          <!-- Isometric cube -->
+          <g fill="none" stroke="rgba(200,80,42,0.7)" stroke-width="1">
+            <!-- Top face -->
+            <polygon points="150,40 220,80 150,120 80,80" fill="rgba(200,80,42,0.1)"/>
+            <!-- Left face -->
+            <polygon points="80,80 150,120 150,185 80,145" fill="rgba(200,80,42,0.06)"/>
+            <!-- Right face -->
+            <polygon points="220,80 150,120 150,185 220,145" fill="rgba(200,80,42,0.12)"/>
+          </g>
+          <!-- Inner cube smaller -->
+          <g fill="none" stroke="rgba(200,80,42,0.3)" stroke-width="0.5">
+            <polygon points="150,75 188,97 150,119 112,97" fill="rgba(200,80,42,0.05)"/>
+            <line x1="112" y1="97" x2="112" y2="140"/>
+            <line x1="188" y1="97" x2="188" y2="140"/>
+            <line x1="112" y1="140" x2="150" y2="162"/>
+            <line x1="188" y1="140" x2="150" y2="162"/>
+            <line x1="150" y1="119" x2="150" y2="162"/>
+          </g>
+          <text x="150" y="205" font-family="monospace" font-size="8" fill="rgba(200,80,42,0.6)" text-anchor="middle">SPATIAL GEOMETRY ENGINE</text>
+        </svg>
+      </div>
+      <div class="card-overlay"></div>
+      <div class="card-content">
+        <div class="card-index">03</div>
+        <div class="card-category cat-3d">3D</div>
+        <div class="card-title">Forge 3D Studio</div>
+        <div class="card-desc">Browser-based 3D modeling environment with real-time ray tracing and collaborative editing.</div>
+        <div class="card-tags">
+          <span class="tag">WebGL</span>
+          <span class="tag">WASM</span>
+          <span class="tag">Rust</span>
+        </div>
+      </div>
+      <div class="card-arrow">
+        <svg viewBox="0 0 14 14" fill="none">
+          <path d="M2 12L12 2M12 2H6M12 2V8" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- 4 TALL -->
+    <div class="project-card tall" data-cat="data">
+      <div class="card-bg card-bg-4"></div>
+      <div class="card-visual">
+        <svg class="visual-svg" viewBox="0 0 300 450" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="rg4" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#2a7fc8" stop-opacity="0.3"/>
+              <stop offset="100%" stop-color="#0a0f1a" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="300" height="450" fill="url(#rg4)"/>
+          <!-- Waveform bars -->
+          <g fill="rgba(42,127,200,0.8)">
+            <rect x="30" y="180" width="8" height="90" rx="4"/>
+            <rect x="48" y="160" width="8" height="130" rx="4"/>
+            <rect x="66" y="200" width="8" height="50" rx="4"/>
+            <rect x="84" y="140" width="8" height="170" rx="4"/>
+            <rect x="102" y="170" width="8" height="110" rx="4"/>
+            <rect x="120" y="120" width="8" height="210" rx="4"/>
+            <rect x="138" y="155" width="8" height="140" rx="4"/>
+            <rect x="156" y="190" width="8" height="70" rx="4"/>
+            <rect x="174" y="130" width="8" height="190" rx="4"/>
+            <rect x="192" y="165" width="8" height="120" rx="4"/>
+            <rect x="210" y="145" width="8" height="160" rx="4"/>
+            <rect x="228" y="195" width="8" height="60" rx="4"/>
+            <rect x="246" y="175" width="8" height="100" rx="4"/>
+            <rect x="264" y="150" width="8" height="150" rx="4"/>
+          </g>
+          <!-- Graph line -->
+          <polyline points="30,280 60,240 90,300 120,220 150,260 180,210 210,240 240,270 270,230" stroke="rgba(42,127,200,0.9)" stroke-width="2" fill="none"/>
+          <text x="150" y="420" font-family="monospace" font-size="9" fill="rgba(42,127,200,0.6)" text-anchor="middle">SOUND · FREQUENCY · ANALYSIS</text>
+        </svg>
+      </div>
+      <div class="card-overlay"></div>
+      <div class="card-content">
+        <div class="card-index">04</div>
+        <div class="card-category cat-data">Data</div>
+        <div class="card-title">Pulse Audio Analyzer</div>
+        <div class="card-desc">Real-time audio frequency visualization with machine learning beat detection and mood analysis.</div>
+        <div class="card-tags">
+          <span class="tag">Web Audio API</span>
+          <span class="tag">Canvas</span>
+          <span class="tag">ML</span>
+        </div>
+      </div>
+      <div class="card-arrow">
+        <svg viewBox="0 0 14 14" fill="none">
+          <path d="M2 12L12 2M12 2H6M12 2V8" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="project-card" data-cat="app">
+      <div class="card-bg card-bg-5"></div>
+      <div class="card-visual">
+        <svg class="visual-svg" viewBox="0 0 300 225" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="rg5" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#c8a82a" stop-opacity="0.3"/>
+              <stop offset="100%" stop-color="#1a1a0a" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="300" height="225" fill="url(#rg5)"/>
+          <!-- Phone frame -->
+          <rect x="110" y="30" width="80" height="165" rx="12" fill="none" stroke="rgba(200,168,42,0.6)" stroke-width="2"/>
+          <rect x="118" y="42" width="64" height="141" rx="6" fill="rgba(200,168,42,0.08)"/>
+          <!-- Screen elements -->
+          <rect x="126" y="55" width="48" height="6" rx="3" fill="rgba(200,168,42,0.5)"/>
+          <rect x="126" y="68" width="32" height="4" rx="2" fill="rgba(200,168,42,0.3)"/>
+          <rect x="126" y="82" width="48" height="28" rx="4" fill="rgba(200,168,42,0.12)" stroke="rgba(200,168,42,0.3)" stroke-width="0.5"/>
+          <rect x="126" y="118" width="20" height="18" rx="3" fill="rgba(200,168,42,0.2)"/>
+          <rect x="154" y="118" width="20" height="18" rx="3" fill="rgba(200,168,42,0.15)"/>
+          <rect x="126" y="144" width="48" height="3" rx="1.5" fill="rgba(200,168,42,0.2)"/>
+          <rect x="126" y="152" width="36" height="3" rx="1.5" fill="rgba(200,168,42,0.2)"/>
+          <text x="150" y="208" font-family="monospace" font-size="8" fill="rgba(200,168,42,0.6)" text-anchor="middle">MOBILE · UX · DESIGN</text>
+        </svg>
+      </div>
+      <div class="card-overlay"></div>
+      <div class="card-content">
+        <div class="card-index">05</div>
+        <div class="card-category cat-app">App</div>
+        <div class="card-title">Lumina Finance</div>
+        <div class="card-desc">Minimal mobile banking app with gesture-based navigation and real-time portfolio analytics.</div>
+        <div class="card-tags">
+          <span class="tag">React Native</span>
+          <span class="tag">Plaid API</span>
+          <span class="tag">Reanimated</span>
+        </div>
+      </div>
+      <div class="card-arrow">
+        <svg viewBox="0 0 14 14" fill="none">
+          <path d="M2 12L12 2M12 2H6M12 2V8" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="project-card" data-cat="web">
+      <div class="card-bg card-bg-6"></div>
+      <div class="card-visual">
+        <svg class="visual-svg" viewBox="0 0 300 225" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="rg6" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#c82a2a" stop-opacity="0.3"/>
+              <stop offset="100%" stop-color="#1a0a0a" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="300" height="225" fill="url(#rg6)"/>
+          <!-- Globe wireframe -->
+          <circle cx="150" cy="112" r="70" fill="none" stroke="rgba(200,42,42,0.4)" stroke-width="1"/>
+          <ellipse cx="150" cy="112" rx="70" ry="25" fill="none" stroke="rgba(200,42,42,0.25)" stroke-width="0.5"/>
+          <ellipse cx="150" cy="112" rx="35" ry="70" fill="none" stroke="rgba(200,42,42,0.25)" stroke-width="0.5"/>
+          <ellipse cx="150" cy="112" rx="55" ry="70" fill="none" stroke="rgba(200,42,42,0.2)" stroke-width="0.5"/>
+          <line x1="80" y1="112" x2="220" y2="112" stroke="rgba(200,42,42,0.25)" stroke-width="0.5"/>
+          <line x1="150" y1="42" x2="150" y2="182" stroke="rgba(200,42,42,0.25)" stroke-width="0.5"/>
+          <!-- Dots on globe -->
+          <circle cx="130" cy="88" r="3" fill="rgba(200,42,42,0.9)"/>
+          <circle cx="170" cy="130" r="3" fill="rgba(200,42,42,0.9)"/>
+          <circle cx="188" cy="95" r="2" fill="rgba(200,42,42,0.7)"/>
+          <line x1="130" y1="88" x2="170" y2="130" stroke="rgba(200,42,42,0.5)" stroke-width="0.5" stroke-dasharray="4,2"/>
+          <text x="150" y="205" font-family="monospace" font-size="8" fill="rgba(200,42,42,0.6)" text-anchor="middle">GEO · NETWORK · ROUTING</text>
+        </svg>
+      </div>
+      <div class="card-overlay"></div>
+      <div class="card-content">
+        <div class="card-index">06</div>
+        <div class="card-category cat-web">Web</div>
+        <div class="card-title">Globe Network</div>
+        <div class="card-desc">Interactive 3D globe showing real-time global internet traffic and network routing paths.</div>
+        <div class="card-tags">
+          <span class="tag">Three.js</span>
+          <span class="tag">MapboxGL</span>
+          <span class="tag">WebSockets</span>
+        </div>
+      </div>
+      <div class="card-arrow">
+        <svg viewBox="0 0 14 14" fill="none">
+          <path d="M2 12L12 2M12 2H6M12 2V8" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="project-card" data-cat="ai">
+      <div class="card-bg card-bg-7"></div>
+      <div class="card-visual">
+        <svg class="visual-svg" viewBox="0 0 300 225" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="rg7" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#2ac8c8" stop-opacity="0.25"/>
+              <stop offset="100%" stop-color="#0a1a1a" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="300" height="225" fill="url(#rg7)"/>
+          <!-- Chat bubbles -->
+          <rect x="40" y="40" width="140" height="36" rx="18" fill="rgba(42,200,200,0.15)" stroke="rgba(42,200,200,0.4)" stroke-width="0.5"/>
+          <text x="110" y="62" font-family="monospace" font-size="9" fill="rgba(42,200,200,0.8)" text-anchor="middle">Hello, how can I help?</text>
+          <rect x="120" y="90" width="140" height="36" rx="18" fill="rgba(42,200,200,0.08)" stroke="rgba(42,200,200,0.25)" stroke-width="0.5"/>
+          <text x="190" y="112" font-family="monospace" font-size="9" fill="rgba(42,200,200,0.6)" text-anchor="middle">Analyze this dataset</text>
+          <rect x="40" y="140" width="160" height="36" rx="18" fill="rgba(42,200,200,0.15)" stroke="rgba(42,200,200,0.4)" stroke-width="0.5"/>
+          <text x="120" y="162" font-family="monospace" font-size="9" fill="rgba(42,200,200,0.8)" text-anchor="middle">Processing... 94% accuracy</text>
+          <!-- Blinking dots -->
+          <circle cx="60" cy="196" r="3" fill="rgba(42,200,200,0.8)"/>
+          <circle cx="74" cy="196" r="3" fill="rgba(42,200,200,0.5)"/>
+          <circle cx="88" cy="196" r="3" fill="rgba(42,200,200,0.25)"/>
+          <text x="200" y="208" font-family="monospace" font-size="8" fill="rgba(42,200,200,0.5)" text-anchor="middle">AI · CONVERSATION · INTERFACE</text>
+        </svg>
+      </div>
+      <div class="card-overlay"></div>
+      <div class="card-content">
+        <div class="card-index">07</div>
+        <div class="card-category cat-ai">AI</div>
+        <div class="card-title">Echo AI Chat</div>
+        <div class="card-desc">Context-aware conversational AI with persistent memory, multi-modal input, and real-time analysis.</div>
+        <div class="card-tags">
+          <span class="tag">LLM</span>
+          <span class="tag">Next.js</span>
+          <span class="tag">Streaming</span>
+        </div>
+      </div>
+      <div class="card-arrow">
+        <svg viewBox="0 0 14 14" fill="none">
+          <path d="M2 12L12 2M12 2H6M12 2V8" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- 8 -->
+    <div class="project-card" data-cat="3d">
+      <div class="card-bg card-bg-8"></div>
+      <div class="card-visual">
+        <svg class="visual-svg" viewBox="0 0 300 225" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="rg8" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#c82ac8" stop-opacity="0.25"/>
+              <stop offset="100%" stop-color="#1a0a1a" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="300" height="225" fill="url(#rg8)"/>
+          <!-- Flower of life sacred geometry -->
+          <g fill="none" stroke="rgba(200,42,200,0.4)" stroke-width="0.8">
+            <circle cx="150" cy="112" r="45"/>
+            <circle cx="150" cy="67" r="45"/>
+            <circle cx="150" cy="157" r="45"/>
+            <circle cx="111" cy="89" r="45"/>
+            <circle cx="189" cy="89" r="45"/>
+            <circle cx="111" cy="135" r="45"/>
+            <circle cx="189" cy="135" r="45"/>
+          </g>
+          <circle cx="150" cy="112" r="45" fill="none" stroke="rgba(200,42,200,0.7)" stroke-width="1.2"/>
+          <text x="150" y="208" font-family="monospace" font-size="8" fill="rgba(200,42,200,0.6)" text-anchor="middle">SACRED · GEOMETRY · GENERATOR</text>
+        </svg>
+      </div>
+      <div class="card-overlay"></div>
+      <div class="card-content">
+        <div class="card-index">08</div>
+        <div class="card-category cat-3d">3D</div>
+        <div class="card-title">Sacred Geometry</div>
+        <div class="card-desc">Procedural sacred geometry generator with export to SVG, 3D print, and laser cut formats.</div>
+        <div class="card-tags">
+          <span class="tag">Canvas 2D</span>
+          <span class="tag">P5.js</span>
+          <span class="tag">SVG Export</span>
+        </div>
+      </div>
+      <div class="card-arrow">
+        <svg viewBox="0 0 14 14" fill="none">
+          <path d="M2 12L12 2M12 2H6M12 2V8" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- 9 FEATURED -->
+    <div class="project-card featured" data-cat="data">
+      <div class="card-bg card-bg-9"></div>
+      <div class="card-visual">
+        <svg class="visual-svg" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="rg9" cx="40%" cy="50%" r="60%">
+              <stop offset="0%" stop-color="#3b6d11" stop-opacity="0.4"/>
+              <stop offset="100%" stop-color="#0f1a0a" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="800" height="300" fill="url(#rg9)"/>
+          <!-- Tree hierarchy -->
+          <g stroke="rgba(80,200,40,0.3)" stroke-width="1" fill="none">
+            <line x1="400" y1="60" x2="220" y2="120"/>
+            <line x1="400" y1="60" x2="580" y2="120"/>
+            <line x1="220" y1="120" x2="130" y2="190"/>
+            <line x1="220" y1="120" x2="310" y2="190"/>
+            <line x1="580" y1="120" x2="490" y2="190"/>
+            <line x1="580" y1="120" x2="670" y2="190"/>
+            <line x1="130" y1="190" x2="85" y2="250"/>
+            <line x1="130" y1="190" x2="175" y2="250"/>
+            <line x1="670" y1="190" x2="625" y2="250"/>
+            <line x1="670" y1="190" x2="715" y2="250"/>
+          </g>
+          <g fill="rgba(80,200,40,0.8)">
+            <circle cx="400" cy="60" r="10"/>
+            <circle cx="220" cy="120" r="7"/>
+            <circle cx="580" cy="120" r="7"/>
+            <circle cx="130" cy="190" r="5"/>
+            <circle cx="310" cy="190" r="5"/>
+            <circle cx="490" cy="190" r="5"/>
+            <circle cx="670" cy="190" r="5"/>
+            <circle cx="85" cy="250" r="3"/>
+            <circle cx="175" cy="250" r="3"/>
+            <circle cx="625" cy="250" r="3"/>
+            <circle cx="715" cy="250" r="3"/>
+          </g>
+          <text x="400" y="285" font-family="monospace" font-size="10" fill="rgba(80,200,40,0.5)" text-anchor="middle">HIERARCHICAL DATA EXPLORER — 2.4M NODES</text>
+        </svg>
+      </div>
+      <div class="card-overlay"></div>
+      <div class="scan-line"></div>
+      <div class="card-content">
+        <div class="card-index">09</div>
+        <div class="card-category cat-data">Data</div>
+        <div class="card-title">TreeVis — Data Hierarchy Explorer</div>
+        <div class="card-desc">Navigate millions of data nodes in real-time with collapsible trees, force graphs, and radial layouts.</div>
+        <div class="card-tags">
+          <span class="tag">D3.js</span>
+          <span class="tag">WebWorkers</span>
+          <span class="tag">IndexedDB</span>
+          <span class="tag">Rust WASM</span>
+        </div>
+      </div>
+      <div class="card-arrow">
+        <svg viewBox="0 0 14 14" fill="none">
+          <path d="M2 12L12 2M12 2H6M12 2V8" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- 10 -->
+    <div class="project-card" data-cat="app">
+      <div class="card-bg card-bg-10"></div>
+      <div class="card-visual">
+        <svg class="visual-svg" viewBox="0 0 300 225" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="rg10" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#4040cc" stop-opacity="0.3"/>
+              <stop offset="100%" stop-color="#0a0f1a" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="300" height="225" fill="url(#rg10)"/>
+          <!-- Calendar grid -->
+          <g fill="none" stroke="rgba(80,80,200,0.3)" stroke-width="0.5">
+            <rect x="50" y="40" width="200" height="160" rx="8"/>
+            <line x1="50" y1="68" x2="250" y2="68"/>
+            <line x1="50" y1="96" x2="250" y2="96"/>
+            <line x1="50" y1="124" x2="250" y2="124"/>
+            <line x1="50" y1="152" x2="250" y2="152"/>
+            <line x1="107" y1="68" x2="107" y2="200"/>
+            <line x1="164" y1="68" x2="164" y2="200"/>
+            <line x1="221" y1="68" x2="221" y2="200"/>
+          </g>
+          <!-- Today highlight -->
+          <rect x="107" y="96" width="57" height="28" rx="4" fill="rgba(80,80,200,0.3)" stroke="rgba(80,80,200,0.6)" stroke-width="1"/>
+          <!-- Event bars -->
+          <rect x="55" y="100" width="45" height="8" rx="4" fill="rgba(80,80,200,0.4)"/>
+          <rect x="169" y="104" width="75" height="6" rx="3" fill="rgba(80,80,200,0.3)"/>
+          <rect x="55" y="128" width="95" height="8" rx="4" fill="rgba(80,80,200,0.5)"/>
+          <rect x="169" y="128" width="40" height="8" rx="4" fill="rgba(80,80,200,0.35)"/>
+          <text x="150" y="215" font-family="monospace" font-size="8" fill="rgba(80,80,200,0.6)" text-anchor="middle">SMART · SCHEDULING · PLATFORM</text>
+        </svg>
+      </div>
+      <div class="card-overlay"></div>
+      <div class="card-content">
+        <div class="card-index">10</div>
+        <div class="card-category cat-app">App</div>
+        <div class="card-title">Cal AI Scheduler</div>
+        <div class="card-desc">AI-powered calendar that learns your preferences, auto-schedules meetings and protects focus time.</div>
+        <div class="card-tags">
+          <span class="tag">Vue 3</span>
+          <span class="tag">Google Cal API</span>
+          <span class="tag">OpenAI</span>
+        </div>
+      </div>
+      <div class="card-arrow">
+        <svg viewBox="0 0 14 14" fill="none">
+          <path d="M2 12L12 2M12 2H6M12 2V8" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- 11 -->
+    <div class="project-card" data-cat="web">
+      <div class="card-bg card-bg-11"></div>
+      <div class="card-visual">
+        <svg class="visual-svg" viewBox="0 0 300 225" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="rg11" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#c87a2a" stop-opacity="0.3"/>
+              <stop offset="100%" stop-color="#1a0f08" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="300" height="225" fill="url(#rg11)"/>
+          <!-- Typeface lettering -->
+          <text x="60" y="100" font-family="Georgia,serif" font-size="72" font-style="italic" fill="rgba(200,122,42,0.15)" font-weight="bold">Aa</text>
+          <text x="55" y="98" font-family="Georgia,serif" font-size="72" font-style="italic" fill="none" stroke="rgba(200,122,42,0.5)" stroke-width="0.5" font-weight="bold">Aa</text>
+          <!-- Grid overlay -->
+          <g stroke="rgba(200,122,42,0.15)" stroke-width="0.5">
+            <line x1="50" y1="35" x2="260" y2="35"/>
+            <line x1="50" y1="55" x2="260" y2="55"/>
+            <line x1="50" y1="95" x2="260" y2="95"/>
+            <line x1="50" y1="110" x2="260" y2="110"/>
+          </g>
+          <text x="210" y="90" font-family="monospace" font-size="32" fill="rgba(200,122,42,0.4)">Bb</text>
+          <text x="150" y="160" font-family="monospace" font-size="11" fill="rgba(200,122,42,0.6)" letter-spacing="4">ABCDEFGHIJ</text>
+          <text x="150" y="178" font-family="monospace" font-size="11" fill="rgba(200,122,42,0.4)" letter-spacing="4">abcdefghij</text>
+          <text x="150" y="210" font-family="monospace" font-size="8" fill="rgba(200,122,42,0.5)" text-anchor="middle">TYPEFACE · DESIGN · TOOL</text>
+        </svg>
+      </div>
+      <div class="card-overlay"></div>
+      <div class="card-content">
+        <div class="card-index">11</div>
+        <div class="card-category cat-web">Web</div>
+        <div class="card-title">Glyph Foundry</div>
+        <div class="card-desc">Browser-based variable font design tool with real-time rendering and OpenType feature testing.</div>
+        <div class="card-tags">
+          <span class="tag">FontKit</span>
+          <span class="tag">OpenType.js</span>
+          <span class="tag">Canvas</span>
+        </div>
+      </div>
+      <div class="card-arrow">
+        <svg viewBox="0 0 14 14" fill="none">
+          <path d="M2 12L12 2M12 2H6M12 2V8" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- 12 TALL -->
+    <div class="project-card tall" data-cat="3d">
+      <div class="card-bg card-bg-12"></div>
+      <div class="card-visual">
+        <svg class="visual-svg" viewBox="0 0 300 450" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="rg12" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#2a50c8" stop-opacity="0.3"/>
+              <stop offset="100%" stop-color="#080f1a" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="300" height="450" fill="url(#rg12)"/>
+          <!-- Architecture floor plan lines -->
+          <g stroke="rgba(42,80,200,0.5)" stroke-width="0.8" fill="none">
+            <rect x="60" y="50" width="180" height="160"/>
+            <rect x="60" y="50" width="80" height="70"/>
+            <rect x="140" y="50" width="100" height="70"/>
+            <rect x="60" y="120" width="180" height="90"/>
+            <line x1="100" y1="50" x2="100" y2="120"/>
+            <line x1="140" y1="50" x2="140" y2="210"/>
+            <line x1="200" y1="50" x2="200" y2="120"/>
+            <!-- Stairs -->
+            <line x1="160" y1="155" x2="220" y2="155"/>
+            <line x1="160" y1="165" x2="220" y2="165"/>
+            <line x1="160" y1="175" x2="220" y2="175"/>
+            <line x1="160" y1="185" x2="220" y2="185"/>
+            <line x1="160" y1="195" x2="220" y2="195"/>
+          </g>
+          <!-- Level 2 -->
+          <g stroke="rgba(42,80,200,0.3)" stroke-width="0.5" fill="none">
+            <rect x="60" y="240" width="180" height="130"/>
+            <rect x="60" y="240" width="90" height="60"/>
+            <rect x="150" y="240" width="90" height="60"/>
+            <rect x="60" y="300" width="180" height="70"/>
+            <line x1="150" y1="240" x2="150" y2="370"/>
+          </g>
+          <!-- Dimension lines -->
+          <g stroke="rgba(42,80,200,0.4)" stroke-width="0.3" fill="none">
+            <line x1="48" y1="50" x2="48" y2="210"/>
+            <line x1="44" y1="50" x2="52" y2="50"/>
+            <line x1="44" y1="210" x2="52" y2="210"/>
+            <text x="38" y="135" font-family="monospace" font-size="7" fill="rgba(42,80,200,0.6)" text-anchor="middle" transform="rotate(-90 38 135)">12.4m</text>
+          </g>
+          <text x="150" y="420" font-family="monospace" font-size="8" fill="rgba(42,80,200,0.6)" text-anchor="middle">ARCHITECTURAL · FLOOR PLAN · CAD</text>
+        </svg>
+      </div>
+      <div class="card-overlay"></div>
+      <div class="card-content">
+        <div class="card-index">12</div>
+        <div class="card-category cat-3d">3D</div>
+        <div class="card-title">Arch Blueprint</div>
+        <div class="card-desc">Collaborative architectural design platform with AI-generated floor plans and structural analysis.</div>
+        <div class="card-tags">
+          <span class="tag">WebGL</span>
+          <span class="tag">BIM.js</span>
+          <span class="tag">AI Gen</span>
+          <span class="tag">Collab</span>
+        </div>
+      </div>
+      <div class="card-arrow">
+        <svg viewBox="0 0 14 14" fill="none">
+          <path d="M2 12L12 2M12 2H6M12 2V8" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- 13 -->
+    <div class="project-card" data-cat="ai">
+      <div class="card-bg card-bg-13"></div>
+      <div class="card-visual">
+        <svg class="visual-svg" viewBox="0 0 300 225" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="rg13" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#c82a40" stop-opacity="0.3"/>
+              <stop offset="100%" stop-color="#0f0808" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="300" height="225" fill="url(#rg13)"/>
+          <!-- Face detection grid -->
+          <rect x="95" y="45" width="110" height="110" rx="4" fill="none" stroke="rgba(200,42,64,0.6)" stroke-width="1.5"/>
+          <!-- Corner brackets -->
+          <path d="M95,65 L95,45 L115,45" fill="none" stroke="rgba(200,42,64,0.9)" stroke-width="2"/>
+          <path d="M185,65 L185,45 L165,45" fill="none" stroke="rgba(200,42,64,0.9)" stroke-width="2"/>
+          <path d="M95,135 L95,155 L115,155" fill="none" stroke="rgba(200,42,64,0.9)" stroke-width="2"/>
+          <path d="M185,135 L185,155 L165,155" fill="none" stroke="rgba(200,42,64,0.9)" stroke-width="2"/>
+          <!-- Face outline -->
+          <ellipse cx="150" cy="100" rx="35" ry="42" fill="none" stroke="rgba(200,42,64,0.3)" stroke-width="0.5" stroke-dasharray="4,2"/>
+          <!-- Eyes -->
+          <circle cx="136" cy="90" r="5" fill="none" stroke="rgba(200,42,64,0.7)" stroke-width="1"/>
+          <circle cx="164" cy="90" r="5" fill="none" stroke="rgba(200,42,64,0.7)" stroke-width="1"/>
+          <circle cx="136" cy="90" r="2" fill="rgba(200,42,64,0.6)"/>
+          <circle cx="164" cy="90" r="2" fill="rgba(200,42,64,0.6)"/>
+          <!-- Data readout -->
+          <text x="50" y="175" font-family="monospace" font-size="7" fill="rgba(200,42,64,0.7)">MATCH: 99.2%</text>
+          <text x="50" y="188" font-family="monospace" font-size="7" fill="rgba(200,42,64,0.5)">EMOTION: NEUTRAL</text>
+          <text x="150" y="210" font-family="monospace" font-size="8" fill="rgba(200,42,64,0.5)" text-anchor="middle">VISION · AI · RECOGNITION</text>
+        </svg>
+      </div>
+      <div class="card-overlay"></div>
+      <div class="card-content">
+        <div class="card-index">13</div>
+        <div class="card-category cat-ai">AI</div>
+        <div class="card-title">Vision AI Suite</div>
+        <div class="card-desc">Computer vision platform with emotion detection, object recognition, and real-time video analysis.</div>
+        <div class="card-tags">
+          <span class="tag">TensorFlow.js</span>
+          <span class="tag">WebRTC</span>
+          <span class="tag">ONNX</span>
+        </div>
+      </div>
+      <div class="card-arrow">
+        <svg viewBox="0 0 14 14" fill="none">
+          <path d="M2 12L12 2M12 2H6M12 2V8" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- 14 -->
+    <div class="project-card" data-cat="data">
+      <div class="card-bg card-bg-14"></div>
+      <div class="card-visual">
+        <svg class="visual-svg" viewBox="0 0 300 225" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="rg14" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#2ac870" stop-opacity="0.3"/>
+              <stop offset="100%" stop-color="#080f0a" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="300" height="225" fill="url(#rg14)"/>
+          <!-- Chord diagram -->
+          <circle cx="150" cy="110" r="70" fill="none" stroke="rgba(42,200,112,0.2)" stroke-width="1"/>
+          <!-- Arcs -->
+          <path d="M150,40 C200,40 220,110 220,110" fill="none" stroke="rgba(42,200,112,0.4)" stroke-width="6" stroke-linecap="round"/>
+          <path d="M210,155 C180,180 80,180 80,110" fill="none" stroke="rgba(42,200,112,0.3)" stroke-width="4" stroke-linecap="round"/>
+          <path d="M90,65 C60,90 70,150 150,180" fill="none" stroke="rgba(42,200,112,0.35)" stroke-width="5" stroke-linecap="round"/>
+          <path d="M200,80 C230,120 200,170 170,178" fill="none" stroke="rgba(42,200,112,0.25)" stroke-width="3" stroke-linecap="round"/>
+          <!-- Nodes on ring -->
+          <circle cx="150" cy="40" r="4" fill="rgba(42,200,112,0.8)"/>
+          <circle cx="220" cy="110" r="4" fill="rgba(42,200,112,0.8)"/>
+          <circle cx="80" cy="110" r="4" fill="rgba(42,200,112,0.8)"/>
+          <circle cx="170" cy="178" r="4" fill="rgba(42,200,112,0.8)"/>
+          <text x="150" y="208" font-family="monospace" font-size="8" fill="rgba(42,200,112,0.5)" text-anchor="middle">CHORD · FLOW · DIAGRAM</text>
+        </svg>
+      </div>
+      <div class="card-overlay"></div>
+      <div class="card-content">
+        <div class="card-index">14</div>
+        <div class="card-category cat-data">Data</div>
+        <div class="card-title">Flow Chord</div>
+        <div class="card-desc">Interactive chord and sankey diagram builder for visualizing complex relationship data at scale.</div>
+        <div class="card-tags">
+          <span class="tag">D3 v7</span>
+          <span class="tag">Svelte</span>
+          <span class="tag">CSV Import</span>
+        </div>
+      </div>
+      <div class="card-arrow">
+        <svg viewBox="0 0 14 14" fill="none">
+          <path d="M2 12L12 2M12 2H6M12 2V8" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- 15 -->
+    <div class="project-card" data-cat="app">
+      <div class="card-bg card-bg-15"></div>
+      <div class="card-visual">
+        <svg class="visual-svg" viewBox="0 0 300 225" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="rg15" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#c86040" stop-opacity="0.3"/>
+              <stop offset="100%" stop-color="#0f0a08" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="300" height="225" fill="url(#rg15)"/>
+          <!-- Game controller -->
+          <path d="M80,100 Q60,100 55,120 L45,155 Q42,170 60,170 Q75,170 80,155 L90,130 L210,130 L220,155 Q225,170 240,170 Q258,170 255,155 L245,120 Q240,100 220,100 Z" fill="none" stroke="rgba(200,96,64,0.6)" stroke-width="1.5"/>
+          <!-- D-pad -->
+          <rect x="95" y="105" width="8" height="24" rx="2" fill="rgba(200,96,64,0.4)"/>
+          <rect x="87" y="113" width="24" height="8" rx="2" fill="rgba(200,96,64,0.4)"/>
+          <!-- Buttons -->
+          <circle cx="195" cy="108" r="5" fill="none" stroke="rgba(200,96,64,0.7)" stroke-width="1"/>
+          <circle cx="205" cy="118" r="5" fill="none" stroke="rgba(200,96,64,0.7)" stroke-width="1"/>
+          <circle cx="185" cy="118" r="5" fill="none" stroke="rgba(200,96,64,0.7)" stroke-width="1"/>
+          <circle cx="195" cy="128" r="5" fill="none" stroke="rgba(200,96,64,0.7)" stroke-width="1"/>
+          <!-- Score display -->
+          <rect x="130" y="100" width="40" height="18" rx="3" fill="rgba(200,96,64,0.1)" stroke="rgba(200,96,64,0.3)" stroke-width="0.5"/>
+          <text x="150" y="113" font-family="monospace" font-size="8" fill="rgba(200,96,64,0.8)" text-anchor="middle">9,240</text>
+          <text x="150" y="205" font-family="monospace" font-size="8" fill="rgba(200,96,64,0.5)" text-anchor="middle">GAME · DEVELOPMENT · PLATFORM</text>
+        </svg>
+      </div>
+      <div class="card-overlay"></div>
+      <div class="card-content">
+        <div class="card-index">15</div>
+        <div class="card-category cat-app">App</div>
+        <div class="card-title">Arcade Engine</div>
+        <div class="card-desc">Lightweight 2D game engine for the browser with physics simulation, multiplayer support, and asset pipeline.</div>
+        <div class="card-tags">
+          <span class="tag">WebGL</span>
+          <span class="tag">WebSockets</span>
+          <span class="tag">Physics</span>
+        </div>
+      </div>
+      <div class="card-arrow">
+        <svg viewBox="0 0 14 14" fill="none">
+          <path d="M2 12L12 2M12 2H6M12 2V8" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <div class="footer-logo">VOID</div>
+  <div class="footer-copy">
+    <div>© 2025 VOID Creative Studio</div>
+    <div style="margin-top:4px; font-size:10px;">All projects — digital experiments pushing interface design</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
